@@ -1,0 +1,260 @@
+{
+	"mapwidth": "1000",
+	"mapheight": "500",
+	"defaultstyle": "light",
+	"styles": [
+		{
+			"class": "light",
+			"hover": { "fill": "#f4f4f4" },
+			"active": { "fill": "#fff" }
+		},
+		{
+			"class": "dark",
+			"hover": { "fill": "#666" },
+			"active": { "fill": "#555" }
+		}
+	],
+	"categories": [
+		{
+			"id": "department",
+			"title": "DEPARTMENTS",
+			"about": "",
+			"color": "#FF9595"
+		},
+		{
+			"id": "m",
+			"title": "MASJID",
+			"about": "",
+			"color": "#FFB985"
+		},
+		{
+			"id": "food",
+			"title": "Food,Stores",
+			"about": "",
+			"icon": "images/food.svg",
+			"color": "#A5C882"
+		},
+		{
+			"id": "sport",
+			"title": "SPORTS",
+			"about": "",
+			"color": "#8DB3DC",
+			"style": "dark"
+		},
+		{
+			"id": "others",
+			"title": "Others",
+			"color": "#D3B8F8"
+		},
+		{
+			"id": "nopointer-logos",
+			"title": "Logos",
+			"toggle": "true",
+			"legend": "true",
+			"hide": "true"
+		}
+	],
+	"levels": [
+		{
+			"id": "NEDUNIVERSITY",
+			"title": "NEDUNIVERSITY",
+			"map": "NEDCAMPUSDRAW.png",
+			"minimap": "",
+			"locations": [
+				{
+					"id": "visitorgate",
+					"title": "VISITOR GATE",
+					"about": "",
+                    "pin": "circle",
+					"description": "This is second gate of Ned University. It used for official movement. Official person like VC, Deans, Governor and official person used this gate to enter in university.", 
+					"category": "others",
+					"x": "0.1654",
+					"y": "0.8801"
+				},
+				{
+					"id": "sfcstore",
+					"title": "SFC STATIONARY STORE",
+					"about": "",
+					"description": "It is one of the best stationary store in the university. In this store student can copy their documents, print out their reports, binding their project and take all kind of stationary from there.",
+                    "pin": "pin-marker",
+					"category": "food",
+					"style": "dark",
+					"x": "0.0650",
+					"y": "0.5818"
+				},
+                
+                {
+					"id": "sfc",
+					"title": "Student facilitation centre",
+					"about": "",
+					"description": "This department deal all the student affairs in the university. It deal student scholarship, student complain, student problem in the university, making shuttle coupon and all the necessary work regarding university.",
+					"category": "others",
+					"style": "dark",
+					"x": "0.0655",
+					"y": "0.4161",
+					"zoom": "2"
+				},
+                
+                {
+					"id": "medical",
+					"title": "Medical centre",
+					"description": "It is one of the first medical center in the university. It provide treatment in case of accidental case happen in the university. It conduct all kind of medical test at the time of the admission in the university.",
+					"category": "others",
+					"x": "0.0949",
+					"y": "0.2769",
+					"zoom": "2"
+				},
+                
+                
+                {
+					"id": "adminblock",
+					"title": "ADMIN BLOCK",
+					"about": "Lorem ipsum",
+					"description": "It also called white house in the university. It manage all the official circumstance in the university. VC office, Dean’s office and all official offices situated in here.",
+					"category": "others",
+					
+					"x": "0.0777",
+					"y": "0.0704",
+					"zoom": "2"
+				},
+                
+                {
+					"id": "Deanoffice",
+					"title": "DEAN OFFICE",
+					"about": "",
+					"description": "There are six in the university. Every dean control a couple of discipline, which are related to each other.",
+					
+					"category": "others",
+					"x": "0.0834",
+					"y": "0.1708"
+				},
+                
+                
+                {
+					"id": "masjid",
+					"title": "MASJID",
+					"about": "",
+					"description": "This is one of the biggest mosque ever build in any university. Student, teacher people form staff colony, external people came here for praying, and fell relax to stay.",
+					
+					"category": "m",
+					
+					"x": "0.3135",
+					"y": "0.0477"
+				},
+                
+                
+                {
+					"id": "chemical",
+					"title": "CHEMICAL ENGINEERING DEPT",
+					"about": "",
+					"description": "",
+					"category": "department",
+					
+					"x": "0.4471",
+					"y": "0.0401"
+				},
+                
+                
+                
+				{
+					"id": "library",
+					"title": "ENGR ABUL KALAM LIBRARY",
+					"about": "",
+					"description": "It is one of the biggest library in the university. It contain three parts. Ground floor is the library where student can take books do study. First floor is the Digital library where you can use PC, internet for browsing. Second floor is the discussion hall student can discuss about their project.",
+					"category": "others",
+					"x": "0.4475",
+					"y": "0.1755"
+				},
+                
+                
+                {
+					"id": "hostel",
+					"title": "BOYS HOSTEL",
+					"about": "",
+					"description": "It is first hostel in the university. It contain hundreds of room where thousands of student live. Come from all over the Pakistan. Each room shared by only three student, which contain essential furniture and necessary equipment. ",
+					"category": "others",
+					"x": "0.8623",
+					"y": "0.1642"
+				},
+                
+                {
+					"id": "cricket",
+					"title": "CRICKET GROUND",
+					"about": "",
+					"description": "Ned has its own cricket team and ground as well. This ground is fully functional and have all necessary requirement for playing an international standards match.",
+					"category": "sport",
+					"x": "0.8651",
+					"y": "0.4047"
+				},
+                
+                
+                	{
+					"id": "tennis",
+					"title": "TENNIS COURT",
+					"about": "",
+					"description": "NED Tennis court is inside the gymnasium. Inside in there is also a basketball court, volleyball court and many indoor games which entertain the students.",
+					
+					
+					"category": "sport",
+					"x": "0.8438",
+					"y": "0.5771"
+				},
+                
+                
+				{
+					"id": "parking",
+					"title": "PARKING AREA",
+					"about": "",
+					"description": "",
+					"category": "others",
+					
+					"x": "0.8462",
+					"y": "0.7532"
+				},
+                
+                
+				{
+					"id": "bank",
+					"title": "BANK",
+					"about": "",
+					"description": "In NED there are two banks : Habib Metro Politian and National Bank of Pakistan. Banks are located at the both sides of the Main entrance.  Timing is form 9:00 AM to 5:00 PM. ",
+					
+					"category": "others",
+					"style": "dark",
+					"x": "0.5716",
+					"y": "0.8441"
+				},
+                
+                {
+					"id": "software",
+					"title": "SOFTWARE ENGINEERING DEPARTMENT",
+					"about": "",
+					"description": "This department has been ranked at top discipline since 3 years in the graduate program takes pride in being one of the highest ranking departments of the university",
+					"category": "department",
+					"x": "0.4835",
+					"y": "0.4653"
+				},
+                
+                
+                {
+					"id": "mechanical",
+					"title": "MECHANICAL ENGINEERING DEPT",
+					"about": "",
+					"description": "It is one of the biggest department in the university. This is one of the oldest and most valued mechanical engineering programs in the country. B.E. program is the starting point for careers in several disciplines. With an enrolment of over 800 students.",
+					"category": "department",
+					"style": "dark",
+					"x": "0.4490",
+					"y": "0.3384"
+				}
+                             
+                
+                
+			]
+		}
+		
+					
+				
+			
+		
+	]
+}

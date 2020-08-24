@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="map.png">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Signup Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Create a new account</h1>
+
+        <form action="signup.php" onsubmit="return validation()" method="POST">
+            <div class="box1">
+                <input type="text" name="my_user_name" id="username" placeholder="Username" autocomplete="off">
+                <span id="_username" style="color: red;"></span>
+
+
+            </div>
+
+            <div class="box2">
+                <input type="email" name="my_email" id="email" placeholder="Email Address" autocomplete="off">
+                <span id="_myemail" style="color: red;"></span>
+
+            </div>
+
+            <div class="box2">
+                <input type="password" name="my_password" id="password" placeholder="Enter Password" autocomplete="off">
+                <span id="_mypassword" style="color: red;"></span>
+
+
+            </div>
+
+            <div class="confirm_password">
+
+                <input type="password" id="confirm_password" name="my_confirm_password" placeholder="Confirm Password"
+                    autocomplete="off">
+                <span id="_myconfirmpassword" style="color: red;"></span>
+
+
+            </div>
+
+
+            <div class="contact_no">
+                <input type="tel" name="my_contact_no" id="contact_no" placeholder="Contact Number (####-#######)"
+                    pattern="[0-9]{4}-[0-9]{7}" autocomplete="off">
+                <span id="_mycontactno" style="color: red;"></span>
+
+            </div>
+
+            <div class="btn">
+                <button name="my_submit" id="bt">Sign Up</button>
+            </div>
+        </form>
+
+
+    </div>
+
+    <script>
+
+        function validation() {
+
+
+            var my_user_name = document.getElementById('username').value;
+            var my_email = document.getElementById('email').value;
+            var my_password = document.getElementById('password').value;
+            var my_confirm_password = document.getElementById('confirm_password').value;
+            var my_contact_no = document.getElementById('contact_no').value;
+
+
+            if (my_user_name == "") {
+                document.getElementById('_username').innerHTML = "*enter user name";
+                return false;
+
+            }
+
+
+
+            if (my_email == "") {
+                document.getElementById('_myemail').innerHTML = "*email should not be empty";
+                return false;
+
+            }
+
+            if (my_password == "") {
+                document.getElementById('_mypassword').innerHTML = "*password should not be empty";
+                return false;
+
+            }
+
+            if (my_confirm_password == "") {
+                document.getElementById('_myconfirmpassword').innerHTML = "*this field should should not be empty";
+                return false;
+
+            }
+
+            if (my_contact_no == "") {
+                document.getElementById('_mycontactno').innerHTML = "*enter your contact number";
+                return false;
+
+            }
+
+            if ((my_user_name.length <= 2) || (my_user_name.length >= 20)) {
+                document.getElementById('_username').innerHTML = "*user name must be between 2 and 20 characters";
+                return false;
+            }
+
+            if (!isNaN(my_user_name)) {
+                document.getElementById('_username').innerHTML = "*only characters are allowed";
+                return false;
+            }
+
+            if ((my_email.charAt(my_email.length - 4) != '.') && (my_email.charAt(my_email.length - 3) != '.')) {
+                document.getElementById('_myemail').innerHTML = "*invalid format";
+                return false;
+            }
+
+            if ((my_password.length < 8) || (my_password.length > 16)) {
+                document.getElementById('_mypassword').innerHTML = "*password must be between 8 and 16 characters";
+                return false;
+            }
+
+            if (my_confirm_password != my_password) {
+                document.getElementById('_myconfirmpassword').innerHTML = "*password is not matching";
+                return false;
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
